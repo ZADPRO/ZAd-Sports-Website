@@ -1,0 +1,13 @@
+/* Prevent slider overflow horizontally */
+.slick-slider {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+
+/* Ensure each slide's content padding doesn't cause overflow */
+.slick-slide > div {
+  box-sizing: border-box;
+  padding-left: 0.75rem;  /* matches px-3 */
+  padding-right: 0.75rem;
+}

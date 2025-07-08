@@ -17,13 +17,15 @@ import TestimonialsPage from "../../Components/Testinomials/testimonials";
 // import Terms from "../03_Terms/Terms";
 // import Privacy from "../04_Privacy/Privacy";
 import Blogs from "../../Components/Blogs/blogs";
-import ScrollToTop from "../../Components/Blogs/BlogData"
+import ScrollToTop from "../../Components/Blogs/BlogData";
+import ReleaseView from "../../Components/Release/ReleaseView";
+import BlogView from "../../Components/ListBlogs/BlogsView";
 function App() {
   return (
     <div>
       <Router>
         <Header />
-         <ScrollToTop />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/blogs" element={<Blogs />} />
@@ -33,9 +35,10 @@ function App() {
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          
+          <Route path="/release-view" element={<ReleaseView />} />
+          <Route path="/blog-view" element={<BlogView />} />
 
-<Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
         </Routes>
         <Footer />
       </Router>

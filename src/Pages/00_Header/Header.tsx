@@ -77,7 +77,7 @@ export default function Header() {
   return (
     <>
       {shouldShowHeader && (
-       <header className="w-full sticky top-0 z-50 bg-white shadow-md border-b border-gray-200">
+       <header className="w-full fixed top-0 z-50 bg-white shadow-md border-b border-gray-200 ">
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-3 flex justify-between items-center">
             {/* Logo */}
