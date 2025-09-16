@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import { Helmet } from "react-helmet";
 const Terms: React.FC = () => {
   const { pathname } = useLocation();
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);

@@ -3,6 +3,7 @@ import axios from "axios";
 import decrypt from "../../helper";
 import { useNavigate } from "react-router-dom";
 
+import { Helmet } from "react-helmet";
 interface Release {
   version: string;
   notes: string;
@@ -10,6 +11,10 @@ interface Release {
 }
 
 const AdminRelease: React.FC = () => {
+    <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const [listRelease, setListRelease] = useState<Release[]>([]);
   const [visibleCount, setVisibleCount] = useState(3);
   const navigate = useNavigate();

@@ -32,6 +32,7 @@
 
 import CryptoJS from "crypto-js";
 
+import { Helmet } from "react-helmet";
 type DecryptResult = any;
 
 const decrypt = (
@@ -42,7 +43,10 @@ const decrypt = (
   const cipherParams = CryptoJS.lib.CipherParams.create({
     ciphertext: CryptoJS.enc.Hex.parse(encryptedData),
   });
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   // Perform decryption
   const decrypted = CryptoJS.AES.decrypt(
     cipherParams,

@@ -161,7 +161,12 @@ import decrypt from "../../helper";
 import axios from "axios";
 import { FaStar } from "react-icons/fa";
 
+import { Helmet } from "react-helmet";
 const FeedBackForm: React.FC = () => {
+    <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");

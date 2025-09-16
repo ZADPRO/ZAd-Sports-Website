@@ -3,8 +3,12 @@ import decrypt from "../../helper";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+import { Helmet } from "react-helmet";
 const Login = () => {
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
     const navigate = useNavigate();
 
     const [inputs, setInputs] = useState({

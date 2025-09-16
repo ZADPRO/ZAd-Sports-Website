@@ -103,7 +103,7 @@ import "../../Components/ListBlogs/ListBlogs.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Cricket from "../../assets/images/Cricket.jpg";
-
+import { Helmet } from "react-helmet";
 // import blogTemplateImg from "../../assets/blogs/blogTemplate.jpg";
 import decrypt from "../../helper";
 // import Achievements from "../17-Achievements/Achievements";
@@ -117,6 +117,10 @@ interface Blog {
 }
 
 const Blogs: React.FC = () => {
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const [listBlogs, setListBlogs] = useState<Blog[]>([]);
   const [visibleCount, setVisibleCount] = useState(3);
   const navigate = useNavigate();

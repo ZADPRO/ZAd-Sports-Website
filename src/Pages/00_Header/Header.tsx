@@ -2,6 +2,7 @@ import logo from "../../assets/images/Zad Sports Logo-03.png";
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
+import { Helmet } from "react-helmet";
 export default function Header() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [active, setActive] = useState("Home");
@@ -70,7 +71,10 @@ export default function Header() {
     setActive(path);
     setIsToggleOpen(false);
   };
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const excludedRoutes = ["/subscription"];
   const shouldShowHeader = !excludedRoutes.includes(location.pathname);
 

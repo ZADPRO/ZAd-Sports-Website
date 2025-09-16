@@ -8,6 +8,7 @@ import profile2 from "../../assets/images/Patient/patient2.png";
 import profile3 from "../../assets/images/Patient/patient3.png";
 import profile4 from "../../assets/images/Patient/patient4.png";
 
+import { Helmet } from "react-helmet";
 const testimonials = [
   {
     name: "Nirmal",
@@ -41,7 +42,10 @@ const testimonials = [
 
 const TestimonialsPage: React.FC = () => {
   const navigate = useNavigate();
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   return (
     <section className="py-16 px-6 sm:px-10">
       <div className="max-w-6xl mx-auto">

@@ -3,8 +3,13 @@ import { useLocation, useNavigate } from "react-router-dom";
 import "./BlogView.css";
 import Footballground from "../../assets/images/Football ground.jpg";
 
+import { Helmet } from "react-helmet";
 
 const BlogView: React.FC = () => {
+    <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const location = useLocation();
   const navigate = useNavigate();
   const { blog } = location.state || {};

@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import decrypt from "../../helper";
 import "./Achievements.css";
-
+import { Helmet } from "react-helmet";
 interface Achievements {
   achievementTitle: string;
   achievementDescription: string;
@@ -22,7 +22,10 @@ interface Achievements {
 const Achievements: React.FC = () => {
   const [listAchievements, setListAchievements] = useState<Achievements[]>([]);
   const [visibleCount, setVisibleCount] = useState(3);
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const fetchAchievements = () => {
     axios
       .post(

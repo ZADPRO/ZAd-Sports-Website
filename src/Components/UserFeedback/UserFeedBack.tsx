@@ -4,6 +4,7 @@ import decrypt from "../../helper";
 import { FaStar } from "react-icons/fa";
 import "./UserFeedback.css";
 
+import { Helmet } from "react-helmet";
 interface Feedback {
   reviewContent: string;
   ratings: string;
@@ -12,6 +13,10 @@ interface Feedback {
 }
 
 const ListUserReview: React.FC = () => {
+    <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const [listFeedback, setListFeedback] = useState<Feedback[]>([]);
   const [visibleCount, setVisibleCount] = useState(3);
 

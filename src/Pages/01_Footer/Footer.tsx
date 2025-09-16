@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import decrypt from "../../helper";
 
+import { Helmet } from "react-helmet";
 interface Product {
   refProductsName: string;
   refProductDescription: string;
@@ -49,7 +50,10 @@ export default function Footer() {
         console.error("Failed to fetch products:", error);
       });
   };
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   useEffect(() => {
     fetchProducts();
   }, []);

@@ -3,8 +3,12 @@ import { useEffect, useState } from "react"
 import decrypt from "../../helper";
 import { useNavigate } from "react-router-dom";
 
+import { Helmet } from "react-helmet";
 const Dashboard = () => {
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
     const navigate = useNavigate();
 
     const [loading, setLoading] = useState(true);

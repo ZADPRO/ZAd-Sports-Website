@@ -10,6 +10,7 @@ import IT5 from "../../assets/images/IT 5.jpg";
 import IT6 from "../../assets/images/IT 7.jpg";
 import IT8 from "../../assets/images/IT 8.jpg";
 import Main2 from "../../assets/images/Main image back.jpg";
+
 // import sunset from "../../assets/images/sunset.webp";
 // import { Link } from "react-router-dom";
 // import nn from "../../assets/images/nn.jpg";
@@ -26,6 +27,8 @@ import {
   FaFileInvoice,
   FaHeadset,
 } from "react-icons/fa";
+
+import {Helmet} from "react-helmet";
 // import { useNavigate } from "react-router-dom";
 // import football from "../../assets/images/Football ground.jpg";
 import "@glidejs/glide/dist/css/glide.core.min.css"; // only this line inside TS/JS
@@ -384,7 +387,10 @@ const Home: React.FC = () => {
       }
     };
   }, []);
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   // ------------------------------------------------------nw releases
 
   return (

@@ -7,6 +7,7 @@ import sunset from "../../assets/images/sunset.webp";
 import "./Product.css"
 // import decrypt from ".";
 
+import { Helmet } from "react-helmet";
 interface Product {
   refProductsName: string;
   refProductDescription: string;
@@ -16,6 +17,10 @@ interface Product {
 }
 
 const Product: React.FC = () => {
+    <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const [products, setProducts] = useState<Product[]>([]);
   const [_hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const glideRef = useRef<Glide | null>(null);

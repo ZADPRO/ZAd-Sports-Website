@@ -8,6 +8,7 @@ import Lottie from "lottie-react";
 import tickAnimation from "./tickanimation.json";
 import { useTranslation } from "react-i18next";
 
+import { Helmet } from "react-helmet";
 declare global {
   interface Window {
     Razorpay: any;
@@ -53,7 +54,10 @@ interface UpgradeInfo {
 
 const Subscription = () => {
   const { t, i18n } = useTranslation("global");
-
+  <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const queryParams = new URLSearchParams(window.location.search);
   const accessdata = {
     token: queryParams.get("token") || "",

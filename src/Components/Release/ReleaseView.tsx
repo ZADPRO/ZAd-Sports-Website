@@ -1,7 +1,12 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
+import { Helmet } from "react-helmet";
 const ReleaseView: React.FC = () => {
+    <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   const location = useLocation();
   const navigate = useNavigate();
   const { release } = location.state || {};

@@ -1,6 +1,11 @@
 import React from "react";
 
+import { Helmet } from "react-helmet";
 const Privacy: React.FC = () => {
+    <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+    </Helmet>
   return (
     <div id="privacy" className="bg-[#EEF7FF] text-[#001F3F] min-h-screen py-12 px-6 md:px-12">
       <div className="max-w-4xl mx-auto p-8 md:p-12">
