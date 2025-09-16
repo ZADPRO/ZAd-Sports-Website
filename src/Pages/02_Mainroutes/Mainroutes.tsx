@@ -25,10 +25,7 @@ function App() {
         <Header />
         <ScrollToTop />
         <Routes>
-          {/* ✅ Keep `/` as Home */}
           <Route path="/" element={<Home />} />
-
-          {/* ✅ Optional alias: `/home` also loads Home */}
           <Route path="/home" element={<Home />} />
 
           <Route path="/blogs" element={<Blogs />} />
@@ -40,8 +37,6 @@ function App() {
           <Route path="/release-view" element={<ReleaseView />} />
           <Route path="/blog-view" element={<BlogView />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
-
-          {/* ✅ Fallback for unknown paths */}
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
