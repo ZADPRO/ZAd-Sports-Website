@@ -1,7 +1,6 @@
 import logo from "../../assets/images/Zad Sports Logo-03.png";
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
 import { Helmet } from "react-helmet";
 export default function Header() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -9,15 +8,24 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const menuItems = [
-    { name: "Home", id: "/home#home" },
-    { name: "About Us", id: "/home#about" },
-    { name: "Services", id: "/home#services" },
-    { name: "Blogs", id: "/home#pages" },
-    { name: "Achievements", id: "/home#achievements" },
-    { name: "New Releases", id: "/home#releases" },
-    { name: "Contact Us", id: "/home#contact" },
-  ];
+  // const menuItems = [
+  //   { name: "Home", id: "/home" },
+  //   { name: "About Us", id: "/home#about" },
+  //   { name: "Services", id: "/home#services" },
+  //   { name: "Blogs", id: "/home#pages" },
+  //   { name: "Achievements", id: "/home#achievements" },
+  //   { name: "New Releases", id: "/home#releases" },
+  //   { name: "Contact Us", id: "/home#contact" },
+  // ];
+const menuItems = [
+  { name: "Home", id: "/" },          // root
+  { name: "About Us", id: "about" },  // section IDs only
+  { name: "Services", id: "services" },
+  { name: "Blogs", id: "pages" },
+  { name: "Achievements", id: "achievements" },
+  { name: "New Releases", id: "releases" },
+  { name: "Contact Us", id: "contact" },
+];
 
   // Scroll to hash section
   const scrollToSection = () => {
@@ -59,27 +67,37 @@ export default function Header() {
     return () => observer.disconnect();
   }, []);
 
-  const handleNavigation = (path: string) => {
-    const [route] = path.split("#");
-    if (location.pathname !== route) {
-      navigate(route);
-    } else {
-      const id = path.split("#")[1];
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-    setActive(path);
-    setIsToggleOpen(false);
-  };
-  <Helmet>
-      <title>ZadSports Blogs – Latest Updates & Tips</title>
-      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
-    </Helmet>
+ const handleNavigation = (path: string) => {
+  if (path === "/") {
+    // go to root
+    if (location.pathname !== "/") navigate("/");
+  } else {
+    // scroll to section
+    const el = document.getElementById(path);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  setActive(path);
+  setIsToggleOpen(false);
+};
+
+
   const excludedRoutes = ["/subscription"];
   const shouldShowHeader = !excludedRoutes.includes(location.pathname);
 
   return (
     <>
+       <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+       <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://zadsports.com" />
+      <meta
+  name="keywords"
+  content="box cricket ground size, resort with cricket ground, badminton tournament near me, cricket ground booking, cricket ground booking in hyderabad, cnr cricket ground 2, cricket ground for rent, turf cricket ground near me, box cricket turf, basketball ground near me, vdr cricket ground, turf cricket near me, turf box cricket, cricket net practice near me, mrr cricket ground, vscg cricket ground, basketball courts near me, striker sports indoor academy, indoor cricket nets near me, badminton hall, cricket bowling machine near me, book cricket ground near me, hsr layout cricket ground, snr college cricket ground coimbatore, new madies cricket ground, cooperage ground, cricket nets near me, table tennis club near me, cricket ground booking near me, box cricket, cricket turf near me, badminton court booking, indoor cricket near me, box cricket near me, ground booking app, scf cricket ground salem, turf near me for cricket, pool table near me, table tennis court near me, flying feathers badminton academy, cricket ground near me, synthetic ground near me, turf near me, cricket near me, badminton turf near me, salem cricket ground, ayr cricket ground, football turf near me, tennis courts near me, pickleball court, turf football ground near me, football ground in india, football ground near me, cricket tournament maker, cricket team names for local tournament"
+/>
+
+    </Helmet>
+
       {shouldShowHeader && (
        <header className="w-full fixed top-0 z-50 bg-white shadow-md border-b border-gray-200 ">
 
@@ -91,20 +109,21 @@ export default function Header() {
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex space-x-4 lg:space-x-8 text-sm md:text-base lg:text-lg font-medium">
-              {menuItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.id}
-                  onClick={() => handleNavigation(item.id)}
-                  className={`transition border-b-2 pb-1 ${
-                    active === item.id
-                      ? "text-[#0478df] border-[#0478df]"
-                      : "text-black border-transparent hover:text-[#0478df] hover:border-[#0478df]"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+             {menuItems.map((item) => (
+  <Link
+    key={item.name}
+    to={item.id === "/" ? "/" : "#"}
+    onClick={() => handleNavigation(item.id)}
+    className={`transition border-b-2 pb-1 ${
+      active === item.id
+        ? "text-[#0478df] border-[#0478df]"
+        : "text-black border-transparent hover:text-[#0478df] hover:border-[#0478df]"
+    }`}
+  >
+    {item.name}
+  </Link>
+))}
+
             </nav>
 
             {/* Mobile Menu Toggle */}

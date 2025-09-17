@@ -387,13 +387,21 @@ const Home: React.FC = () => {
       }
     };
   }, []);
-  <Helmet>
-      <title>ZadSports Blogs – Latest Updates & Tips</title>
-      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
-    </Helmet>
   // ------------------------------------------------------nw releases
 
   return (
+    <>
+           <Helmet>
+      <title>ZadSports Blogs – Latest Updates & Tips</title>
+      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
+       <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://zadsports.com" />
+      <meta
+  name="keywords"
+  content="box cricket ground size, resort with cricket ground, badminton tournament near me, cricket ground booking, cricket ground booking in hyderabad, cnr cricket ground 2, cricket ground for rent, turf cricket ground near me, box cricket turf, basketball ground near me, vdr cricket ground, turf cricket near me, turf box cricket, cricket net practice near me, mrr cricket ground, vscg cricket ground, basketball courts near me, striker sports indoor academy, indoor cricket nets near me, badminton hall, cricket bowling machine near me, book cricket ground near me, hsr layout cricket ground, snr college cricket ground coimbatore, new madies cricket ground, cooperage ground, cricket nets near me, table tennis club near me, cricket ground booking near me, box cricket, cricket turf near me, badminton court booking, indoor cricket near me, box cricket near me, ground booking app, scf cricket ground salem, turf near me for cricket, pool table near me, table tennis court near me, flying feathers badminton academy, cricket ground near me, synthetic ground near me, turf near me, cricket near me, badminton turf near me, salem cricket ground, ayr cricket ground, football turf near me, tennis courts near me, pickleball court, turf football ground near me, football ground in india, football ground near me, cricket tournament maker, cricket team names for local tournament"
+/>
+
+    </Helmet>
     <div className="bg-[#EEF7FF]">
       <div
         id="home"
@@ -420,10 +428,11 @@ const Home: React.FC = () => {
             </p>
 
             <h1 className="text-3xl sm:text-5xl md:text-4xl lg:text-5xl font-bold text-[#EEF7FF] mt-4 leading-tight">
-              Book grounds instantly. Play without limits.
+              Cricket Ground Booking Made Easy with Zadsports
             </h1>
 
             <p className="text-sm sm:text-base text-white mt-4">
+               Hassle-Free Online Cricket Ground Booking in Just a Few Clicks
               With ZadSports, you can reserve your favorite sports grounds
               anytime, anywhere. Whether you're training, competing, or just
               playing for fun we empower your squad with real-time bookings,
@@ -1127,6 +1136,7 @@ const Home: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
