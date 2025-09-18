@@ -73,9 +73,10 @@ const Achievements: React.FC = () => {
   return (
     <>
             <Helmet>
-      <title>ZadSports Blogs – Latest Updates & Tips</title>
-      <meta name="description" content="Read the latest sports updates, tips, and stories from ZadSports." />
-       <meta name="robots" content="index, follow" />
+     <title>ZadSports – Book Grounds, Register & Play Matches Easily
+</title>
+      <meta name="description" content="Book sports grounds instantly, register teams, and play competitive matches with ZadSports. Simplified booking, seamless registration, and thrilling sports action - all in one place." />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://zadsports.com" />
       <meta
   name="keywords"
