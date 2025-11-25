@@ -4,6 +4,10 @@ import ball from "../../assets/images/ball.jpg";
 // import { Carousel } from "primereact/carousel";
 import bat from "../../assets/images/bat.webp";
 import ManPlay from "../../assets/images/Man play vector.jpg";
+import img1 from '../../assets/our features/2.jpg';
+import img2 from '../../assets/our features/3.jpg';
+import img3 from '../../assets/our features/4.jpg'
+import img4 from '../../assets/our features/1.jpg'
 // import Glide from "@glidejs/glide";
 import IT4 from "../../assets/images/IT 4.jpg";
 import IT5 from "../../assets/images/IT 5.jpg";
@@ -28,7 +32,7 @@ import {
   FaHeadset,
 } from "react-icons/fa";
 
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 // import { useNavigate } from "react-router-dom";
 // import football from "../../assets/images/Football ground.jpg";
 import "@glidejs/glide/dist/css/glide.core.min.css"; // only this line inside TS/JS
@@ -127,7 +131,7 @@ const Home: React.FC = () => {
   //     return () => slider.destroy();
   //   }, []);
   // -------------------------------------------
- 
+
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
 
   const slideInFromLeft1 = {
@@ -307,7 +311,7 @@ const Home: React.FC = () => {
   //     link: "#",
   //   },
   // ];
- 
+
   const [showModal, setShowModal] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -320,13 +324,13 @@ const Home: React.FC = () => {
 
     const body = encodeURIComponent(
       `Dear Zadroit Team,\n\n` +
-        `I hope this message finds you well.\n\n` +
-        `${description}\n\n` +
-        `Email : ${email}\n` +
-        `Mobile Number : ${phone}\n\n` +
-        `Best regards,\n` +
-        `${name}\n` +
-        `${phone}`
+      `I hope this message finds you well.\n\n` +
+      `${description}\n\n` +
+      `Email : ${email}\n` +
+      `Mobile Number : ${phone}\n\n` +
+      `Best regards,\n` +
+      `${name}\n` +
+      `${phone}`
     );
 
     const mailtoLink = `mailto:${to}?subject=${subject}&body=${body}`;
@@ -337,32 +341,32 @@ const Home: React.FC = () => {
     {
       icon: <FaCalendarCheck className="text-yellow-500 text-3xl mb-2" />,
       title: "Easy Booking",
-      description: "Quick and hassle free ground reservations.",
+      description: "Quick and hassle-free ground reservations for all sports – from cricket ground booking and badminton court booking to football turf, basketball courts near, and box cricket.",
     },
     {
       icon: <FaClipboardList className="text-yellow-500 text-3xl mb-2" />,
       title: "End-to-End Management",
-      description: "We handle everything from booking to payments.",
+      description: "We handle everything from turf cricket ground booking, indoor cricket net and synthetic ground to secure online payments",
     },
     {
       icon: <FaTools className="text-yellow-500 text-3xl mb-2" />,
       title: "Extra Services",
-      description: "Get equipment, Food, Toilet, Stay and more in one place.",
+      description: "Get sports equipment, food, toilet, stay, and more in one place - perfect for cricket tournaments, badminton tournaments, or booking a resort with cricket ground.",
     },
     {
       icon: <FaBan className="text-yellow-500 text-3xl mb-2" />,
       title: "Less Cancellations",
-      description: "Reliable bookings with minimal last minute changes.",
+      description: "Reliable bookings for cricket turf near me, tennis courts near me, and pickleball court reservations with minimal last-minute changes..",
     },
     {
       icon: <FaFileInvoice className="text-yellow-500 text-3xl mb-2" />,
       title: "Clear Invoicing",
-      description: "Transparent pricing with instant invoices.",
+      description: "Transparent pricing with instant invoices for cricket ground for rent, turf near me for cricket,badminton turf and more.",
     },
     {
       icon: <FaHeadset className="text-yellow-500 text-3xl mb-2" />,
       title: "Customer Support",
-      description: "Friendly help whenever you need it.",
+      description: "Friendly help whenever you need it – whether you’re booking a cricket ground in Hyderabad, a football ground or searching for indoor cricket",
     },
   ];
 
@@ -391,157 +395,152 @@ const Home: React.FC = () => {
 
   return (
     <>
-           <Helmet>
-      <title>ZadSports – Book Grounds, Register & Play Matches Easily
-</title>
-      <meta name="description" content="Book sports grounds instantly, register teams, and play competitive matches with ZadSports. Simplified booking, seamless registration, and thrilling sports action - all in one place." />
-       <meta name="robots" content="index, follow" />
+      <Helmet>
+        <title>ZadSports – Book Grounds, Register & Play Matches Easily
+        </title>
+        <meta name="description" content="Book sports grounds instantly, register teams, and play competitive matches with ZadSports. Simplified booking, seamless registration, and thrilling sports action - all in one place." />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://zadsports.com" />
-      <meta
-  name="keywords"
-  content="box cricket ground size, resort with cricket ground, badminton tournament near me, cricket ground booking, cricket ground booking in hyderabad, cnr cricket ground 2, cricket ground for rent, turf cricket ground near me, box cricket turf, basketball ground near me, vdr cricket ground, turf cricket near me, turf box cricket, cricket net practice near me, mrr cricket ground, vscg cricket ground, basketball courts near me, striker sports indoor academy, indoor cricket nets near me, badminton hall, cricket bowling machine near me, book cricket ground near me, hsr layout cricket ground, snr college cricket ground coimbatore, new madies cricket ground, cooperage ground, cricket nets near me, table tennis club near me, cricket ground booking near me, box cricket, cricket turf near me, badminton court booking, indoor cricket near me, box cricket near me, ground booking app, scf cricket ground salem, turf near me for cricket, pool table near me, table tennis court near me, flying feathers badminton academy, cricket ground near me, synthetic ground near me, turf near me, cricket near me, badminton turf near me, salem cricket ground, ayr cricket ground, football turf near me, tennis courts near me, pickleball court, turf football ground near me, football ground in india, football ground near me, cricket tournament maker, cricket team names for local tournament"
-/>
+        <meta
+          name="keywords"
+          content="box cricket ground size, resort with cricket ground, badminton tournament near me, cricket ground booking, cricket ground booking in hyderabad, cnr cricket ground 2, cricket ground for rent, turf cricket ground near me, box cricket turf, basketball ground near me, vdr cricket ground, turf cricket near me, turf box cricket, cricket net practice near me, mrr cricket ground, vscg cricket ground, basketball courts near me, striker sports indoor academy, indoor cricket nets near me, badminton hall, cricket bowling machine near me, book cricket ground near me, hsr layout cricket ground, snr college cricket ground coimbatore, new madies cricket ground, cooperage ground, cricket nets near me, table tennis club near me, cricket ground booking near me, box cricket, cricket turf near me, badminton court booking, indoor cricket near me, box cricket near me, ground booking app, scf cricket ground salem, turf near me for cricket, pool table near me, table tennis court near me, flying feathers badminton academy, cricket ground near me, synthetic ground near me, turf near me, cricket near me, badminton turf near me, salem cricket ground, ayr cricket ground, football turf near me, tennis courts near me, pickleball court, turf football ground near me, football ground in india, football ground near me, cricket tournament maker, cricket team names for local tournament"
+        />
 
-    </Helmet>
-    <div className="bg-[#EEF7FF]">
-      <div
-        id="home"
-        className="min-h-screen md:min-h-[80vh] lg:min-h-[90vh] relative overflow-hidden flex flex-col lg:flex-row items-center justify-center bg-cover bg-center bg-no-repeat overflow-x-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 31, 63, 0.5), rgba(0, 31, 63, 0.5)), url(${ball})`,
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 z-0" />
+      </Helmet>
+      <div className="bg-[#EEF7FF]">
+        <div
+          id="home"
+          className="min-h-screen md:min-h-[80vh] lg:min-h-[90vh] relative overflow-hidden flex flex-col lg:flex-row items-center justify-center bg-cover bg-center bg-no-repeat overflow-x-hidden"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 31, 63, 0.5), rgba(0, 31, 63, 0.5)), url(${ball})`,
+          }}
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 z-0" />
 
-        {/* Main Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:px-10 py-12 gap-10">
-          {/* Right-to-Left Text Animation */}
-          <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="w-full lg:w-1/2 text-center lg:text-left"
-          >
-            <p className="text-base sm:text-lg md:text-sm text-white tracking-widest uppercase">
-              Your Game. Your Time. Your Turf.
-            </p>
+          {/* Main Content */}
+          <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:px-10 py-12 gap-10">
+            {/* Right-to-Left Text Animation */}
+            <motion.div
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="w-full lg:w-1/2 text-center lg:text-left"
+            >
+              <p className="text-base sm:text-lg md:text-sm text-white tracking-widest uppercase">
+               Your Ultimate Sports Destination for Playgrounds & Turf Booking.
+              </p>
 
-            <h1 className="text-3xl sm:text-5xl md:text-4xl lg:text-5xl font-bold text-[#EEF7FF] mt-4 leading-tight">
-              Cricket Ground Booking Made Easy with Zadsports
-            </h1>
+              <h1 className="text-3xl sm:text-5xl md:text-4xl lg:text-5xl font-bold text-[#EEF7FF] mt-4 leading-tight">
+                Zadsports - Play Grounds & Turf Booking
+              </h1>
 
-            <p className="text-sm sm:text-base text-white mt-4">
-               Hassle-Free Online Cricket Ground Booking in Just a Few Clicks
-              With ZadSports, you can reserve your favorite sports grounds
-              anytime, anywhere. Whether you're training, competing, or just
-              playing for fun we empower your squad with real-time bookings,
-              flexible packages, and seamless experiences.
-            </p>
-          </motion.div>
+              <p className="text-sm sm:text-base text-white mt-4">
+                At ZadSports, we believe sports bring people together, build stronger communities, and create
+                lifelong memories. Whether you’re a passionate cricketer, footballer, badminton enthusiast, or just
+                looking for a premium playground with a resort, ZadSports offers world-class facilities for every
+                sports lover.
+              </p>
+            </motion.div>
 
-          {/* Right-to-Left Image Animation */}
-          <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center items-center relative"
-          >
-            {/* Main Ball Image */}
-            <motion.img
-              src={Main2}
-              alt="Main2"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.4 }}
-              className="w-56 sm:w-64 md:w-72 lg:w-[440px] h-[300px] md:h-[350px] lg:h-[380px] object-cover rounded-xl shadow-xl z-10"
-            />
+            {/* Right-to-Left Image Animation */}
+            <motion.div
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center items-center relative"
+            >
+              {/* Main Ball Image */}
+              <motion.img
+                src={Main2}
+                alt="Main2"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.4 }}
+                className="w-56 sm:w-64 md:w-72 lg:w-[440px] h-[300px] md:h-[350px] lg:h-[380px] object-cover rounded-xl shadow-xl z-10"
+              />
 
-            {/* Overlap Grass Image */}
-            <motion.img
-              src={grass}
-              alt="Grass"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.4 }}
-              className="absolute top-[10rem] right-4 sm:right-8 md:right-10 lg:right-1 w-52 sm:w-60 md:w-64 lg:w-[300px] h-[200px] md:h-[220px] lg:h-[240px] object-cover rounded-xl shadow-xl z-20"
-            />
-          </motion.div>
-        </div>
-      </div>
-
-      {/* -------------------------------------------------------------------- */}
-      <div id="about" className="mt-20 bg-[#F0F8FF] py-20 px-6 sm:px-4 mb-50">
-        {/* About Us Title (Center & Top) */}
-        <h5 className="text-xl md:text-2xl font-bold text-[#0478df] tracking-widest uppercase text-center -mt-18 mb-12">
-          About Us
-        </h5>
-
-        {/* Flex Container with responsive layout */}
-        <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-8">
-          {/* Left - Text Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ amount: 0.2 }}
-            className="w-full lg:w-1/2 flex flex-col items-start text-center lg:text-center px-2"
-          >
-            <h2 className="text-3xl md:text-4xl font-medium text-[#07332f] mb-6 ">
-              The Story{" "}
-              <span className="text-[#0478df]">ZAdroit IT Solutions</span>
-            </h2>
-            <p className="text-lg md:text-xl text-gray-700 font-medium text-justify">
-              What started as a small team of tech experts has grown into a
-              trusted global IT solutions provider. With over a decade of
-              experience, we help businesses streamline operations, boost
-              productivity, and stay ahead with cutting edge technology.
-            </p>
-            <p className="mt-4 text-lg md:text-xl text-gray-700 font-medium text-justify">
-              Driven by innovation and strong partnerships, our mission remains
-              the same empowering businesses with future-ready solutions.
-            </p>
-          </motion.div>
-
-          {/* Right - Images Section */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ amount: 0.2 }}
-            className="w-full lg:w-1/2 flex justify-center"
-          >
-            <div className="grid grid-cols-2 gap-3 px-2 mt-8 lg:mt-0">
-              {[IT4, IT5, IT6, IT8].map((src, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.3, y: 100 }}
-                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={{
-                    duration: 0.6,
-                    delay: i * 0.2,
-                    ease: "easeOut",
-                  }}
-                  viewport={{ amount: 0.3, once: true }}
-                  className="rounded-xl overflow-hidden shadow-lg"
-                >
-                  <img
-                    src={src}
-                    alt={`Ground ${i + 1}`}
-                    className="w-[220px] h-[240px] sm:w-[170px] sm:h-[190px] object-cover rounded-xl"
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+              {/* Overlap Grass Image */}
+              <motion.img
+                src={grass}
+                alt="Grass"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4 }}
+                className="absolute top-[10rem] right-4 sm:right-8 md:right-10 lg:right-1 w-52 sm:w-60 md:w-64 lg:w-[300px] h-[200px] md:h-[220px] lg:h-[240px] object-cover rounded-xl shadow-xl z-20"
+              />
+            </motion.div>
+          </div>
         </div>
 
-        {/* Our Products Section */}
-        <div className="w-full mt-16">
-          {/* <p className="text-center text-xl md:text-2xl font-bold text-[#0478df] uppercase mb-6">
+        {/* -------------------------------------------------------------------- */}
+        <div id="about" className="mt-20 bg-[#F0F8FF] py-20 px-6 sm:px-4 mb-50">
+          {/* About Us Title (Center & Top) */}
+          <h5 className="text-xl md:text-2xl font-bold text-[#0478df] tracking-widest uppercase text-center -mt-18 mb-12">
+            About Us
+          </h5>
+
+          {/* Flex Container with responsive layout */}
+          <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-8">
+            {/* Left - Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ amount: 0.2 }}
+              className="w-full lg:w-1/2 flex flex-col items-start text-center lg:text-center px-2"
+            >
+              <h2 className="text-3xl md:text-4xl font-medium text-[#07332f] mb-6 ">
+                Our Story{" "}
+                <span className="text-[#0478df]">ZAdroit IT Solutions</span>
+              </h2>
+              <p className="text-lg md:text-xl text-gray-700 font-medium text-justify">
+               ZAdroit IT Solutions started as a small team of tech enthusiasts and has grown into a global IT and software development partner with 10+ years of experience. We help businesses improve efficiency, productivity, and growth through modern technology.     
+               </p>
+              <p className="mt-4 text-lg md:text-xl text-gray-700 font-medium text-justify">
+                From ERP and enterprise software to custom apps, websites, cloud solutions, and IT consulting, we empower organizations to stay competitive in a digital-first world. Our mission is simple deliver future-ready IT solutions that help companies scale smarter and sustainably.
+              </p>
+            </motion.div>
+
+            {/* Right - Images Section */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ amount: 0.2 }}
+              className="w-full lg:w-1/2 flex justify-center"
+            >
+              <div className="grid grid-cols-2 gap-3 px-2 mt-8 lg:mt-0">
+                {[IT4, IT5, IT6, IT8].map((src, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.3, y: 100 }}
+                    whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: i * 0.2,
+                      ease: "easeOut",
+                    }}
+                    viewport={{ amount: 0.3, once: true }}
+                    className="rounded-xl overflow-hidden shadow-lg"
+                  >
+                    <img
+                      src={src}
+                      alt={`Ground ${i + 1}`}
+                      className="w-[220px] h-[240px] sm:w-[170px] sm:h-[190px] object-cover rounded-xl"
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Our Products Section */}
+          <div className="w-full mt-16">
+            {/* <p className="text-center text-xl md:text-2xl font-bold text-[#0478df] uppercase mb-6">
             Our Products
           </p> */}
-          {/* <div className="glide-09 relative w-full overflow-hidden">
+            {/* <div className="glide-09 relative w-full overflow-hidden">
     <div data-glide-el="track">
       <ul className="glide__slides flex">
         {logos.map((logo, idx) => (
@@ -557,161 +556,246 @@ const Home: React.FC = () => {
       </ul>
     </div>
   </div> */}
-          <Product />
-        </div>
-      </div>
-
-      {/* ------------------------------------------------------------------------------------------------------------- */}
-      <div
-        id="services"
-        className=" scroll-section bg-[#bde1ff] py-12 px-6 md:px-12 lg:px-20"
-      >
-        {/* Top Section - Contact Info */}
-
-        <div className="bg-[#FBFBFB] py-12 px-6 md:px-12 lg:px-20">
-          <h5 className="text-xl md:text-2xl text-center mb-4 font-bold text-[#0478df] tracking-widest uppercase">
-            How to Book Your Ground
-          </h5>
-          <h2 className=" font-bold text-center text-[#07332f] mb-12">
-            Simple, fast, and hassle-free booking in just 3 steps no
-            registration required!
-          </h2>
-          <div className="flex flex-wrap justify-center gap-6">
-            {[
-              {
-                Icon: Search,
-                title: "1. Browse & Select",
-                desc: "Find your perfect ground with powerful filters and maps.",
-                points: [
-                  "Nearby ground search",
-                  "Filter by sport type",
-                  "Verified reviews",
-                ],
-                delay: 0.3,
-              },
-              {
-                Icon: CalendarDays,
-                title: "2. Pick Date & Time",
-                desc: "Choose the right time slot for your match.",
-                points: [
-                  "Instant slot confirmation",
-                  "Time slot reminders",
-                  "Calendar sync",
-                ],
-                delay: 0.5,
-              },
-              {
-                Icon: CreditCard,
-                title: "3. Book & Pay",
-                desc: "Confirm your ground with secure payments.",
-                points: [
-                  "No hidden charges",
-                  "UPI / Card options",
-                  "Receipt on WhatsApp",
-                ],
-                delay: 0.7,
-              },
-            ].map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: step.delay }}
-                viewport={{ once: true }}
-                className="group bg-white rounded-xl shadow-md w-full sm:w-[90%] md:w-[48%] lg:w-[30%] p-6 text-center hover:shadow-xl transition-all duration-700"
-              >
-                {/* Icon */}
-                <div className="flex justify-center items-center w-16 h-16 rounded-full bg-transparent border border-gray-400 group-hover:bg-yellow-300 mx-auto mb-4 transition duration-500">
-                  <step.Icon className="w-6 h-6 text-black transition duration-500" />
-                </div>
-
-                {/* Title & Description */}
-                <h3 className="text-xl font-bold mb-2 text-[#0f172a]">
-                  {step.title}
-                </h3>
-                <p className="text-sm text-gray-700 font-medium mb-4">
-                  {step.desc}
-                </p>
-
-                {/* Animated Bullet Points */}
-                <div className="flex flex-col items-center">
-                  <div className="flex flex-col items-start">
-                    {step.points.map((point, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, x: -40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{
-                          duration: 0.5,
-                          delay: step.delay + i * 0.15,
-                        }}
-                        viewport={{ once: true }}
-                        className="flex items-start gap-2 mb-2 text-gray-700 text-sm"
-                      >
-                        <span className="text-blue-600 font-bold">✔</span>
-                        <span>{point}</span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+            <Product />
           </div>
         </div>
-        {/* ====================================================================================== */}
 
-        {/* -------------------------------------------------------------------------------------------- */}
-        <section className="py-16 px-6 bg-[#f4faff]">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-xl md:text-2xl font-bold text-[#0478df] text-center mb-6 uppercase">
-              Why Choose Us?
-            </h2>
+        {/* ------------------------------------------------------------------------------------------------------------- */}
+        <div
+          id="services"
+          className=" scroll-section bg-[#bde1ff] py-12 px-6 md:px-12 lg:px-20"
+        >
+          {/* Top Section - Contact Info */}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-              {whyChooseData.map((item, index) => (
-                <div
+          <div className="bg-[#FBFBFB] py-12 px-6 md:px-12 lg:px-20">
+            <h5 className="text-xl md:text-2xl text-center mb-4 font-bold text-[#0478df] tracking-widest uppercase">
+              How to Book Your Ground
+            </h5>
+          <h2 className="font-bold text-[#07332f] mb-12 ml-27 text-center  leading-relaxed">
+  Simple, fast, and hassle-free ground booking in just 3 steps – no registration required! 
+  <br/>Book your ground in 3 quick steps - no registration needed! Cricket, football,Basketball, badminton or box cricket - ZadSports makes booking effortless.
+</h2>
+
+            <div className="flex flex-wrap justify-center gap-6">
+              {[
+                {
+                  Icon: Search,
+                  title: "1. Browse & Select",
+                  desc: "Find your perfect ground with powerful filters and maps.",
+                  points: [
+                    "Nearby ground search (cricket ground, turf near me, badminton turf, basketball courts near)",
+                    "Filter by sport type (cricket turf, indoor cricket nets, tennis courts)",
+                    "Verified reviews",
+                  ],
+                  delay: 0.3,
+                },
+                {
+                  Icon: CalendarDays,
+                  title: "2. Pick Date & Time",
+                  desc: "Choose the right time slot for your match.",
+                  points: [
+                    "Instant slot confirmation for cricket turf and indoor cricket",
+                    "Time slot reminders for your badminton tournament or football ground",
+                    "Calendar sync for easy scheduling",
+                  ],
+                  delay: 0.5,
+                },
+                {
+                  Icon: CreditCard,
+                  title: "3. Book & Pay",
+                  desc: "Confirm your ground with secure payments.",
+                  points: [
+                    "No hidden charges for cricket ground for rent or synthetic ground near",
+                    "UPI / Card options for hassle-free cricket ground booking in Hyderabad, Salem, Coimbatore",
+                    "Receipt on WhatsApp for every booking (box cricket turf, pool table, table tennis club)",
+                  ],
+                  delay: 0.7,
+                },
+              ].map((step, index) => (
+                <motion.div
                   key={index}
-                  className="bg-white border-l-4  border-blue-500 rounded-lg shadow-sm px-6 py-6 hover:shadow-lg transition duration-300"
+                  initial={{ opacity: 0, y: 60 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: step.delay }}
+                  viewport={{ once: true }}
+                  className="group bg-white rounded-xl shadow-md w-full sm:w-[90%] md:w-[48%] lg:w-[30%] p-6 text-center hover:shadow-xl transition-all duration-700"
                 >
-                  <div className="text-[#FFCC00] flex flex-col items-start text-left">
-                    {item.icon}
-                    <h3 className="text-lg font-bold text-[#07332f] mt-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 mt-2">
-                      {item.description}
-                    </p>
+                  {/* Icon */}
+                  <div className="flex justify-center items-center w-16 h-16 rounded-full bg-transparent border border-gray-400 group-hover:bg-yellow-300 mx-auto mb-4 transition duration-500">
+                    <step.Icon className="w-6 h-6 text-black transition duration-500" />
                   </div>
-                </div>
+
+                  {/* Title & Description */}
+                  <h3 className="text-xl font-bold mb-2 text-[#0f172a]">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-gray-700 font-medium mb-4">
+                    {step.desc}
+                  </p>
+
+                  {/* Animated Bullet Points */}
+                 {/* Animated Bullet Points */}
+<div className="flex flex-col items-start justify-center mx-auto w-full px-2">
+  <div className="flex flex-col items-start text-justify">
+    {step.points.map((point, i) => (
+      <motion.div
+        key={i}
+        initial={{ opacity: 0, x: -40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 0.5,
+          delay: step.delay + i * 0.15,
+        }}
+        viewport={{ once: true }}
+        className="flex items-start gap-2 mb-2 text-gray-700 text-justify text-sm"
+      >
+        <span className="text-blue-600 font-bold">✔</span>
+        <span className="text-left">{point}</span>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
+                </motion.div>
               ))}
             </div>
           </div>
-        </section>
+          {/* ====================================================================================== */}
 
-        {/* -------------------------------------------------------------------------------------------------------------- */}
-        <section id="testimonials" className="py-16 px-6 bg-[#f4faff] mt-3">
-          <div className="max-w-6xl mx-auto">
-            <AdminRelease />
-          </div>
-        </section>
-        {/* ------------------------------------------------------------------------------------------------ */}
+          {/* -------------------------------------------------------------------------------------------- */}
+          <section className="py-16 px-6 bg-[#f4faff]">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-xl md:text-2xl font-bold text-[#0478df] text-center mb-6 uppercase">
+                Why Choose Us?
+              </h2>
 
-        <section
-          id="pages"
-          className="bg-[#F0F8FF] py-12 px-4 sm:px-6 md:px-10 mt-3"
-        >
-          <div className="max-w-6xl mx-auto">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#0478df] uppercase tracking-widest text-center sm:text-left">
-              BLOGS
-            </h3>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl mt-3 font-medium text-[#0F172A] text-center sm:text-left">
-              Sports Insights and Booking Tips
-            </h2>
-            <p className="text-[#334155] mt-4 sm:mt-6 max-w-3xl text-center sm:text-left mx-auto sm:mx-0 text-sm sm:text-base">
-              Latest News & Articles.
-            </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+                {whyChooseData.map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-white border-l-4  border-blue-500 rounded-lg shadow-sm px-6 py-6 hover:shadow-lg transition duration-300"
+                  >
+                    <div className="text-[#FFCC00] flex flex-col items-start text-left">
+                      {item.icon}
+                      <h3 className="text-lg font-bold text-[#07332f] mt-1">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 mt-2">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
 
-            {/* <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {/* -------------------------------------------------------------------------------------------------------------- */}
+          <section id="testimonials" className="py-16 px-6 bg-[#f4faff] mt-3">
+            <div className="max-w-6xl mx-auto">
+              <AdminRelease />
+            </div>
+          </section>
+          {/* ------------------------------------------------------------------------------------------------ */}
+<section id="features" className="py-16 px-6 bg-[#f4faff] mt-3">
+  <div className="max-w-6xl mx-auto">
+
+    {/* Title */}
+    <h2 className="text-xl md:text-2xl font-bold text-[#0478df] text-center mb-6 uppercase">
+      OUR Features
+    </h2>
+
+    {/* Content */}
+   <div className="space-y-16">
+
+  {/* 1 — Cricket Grounds */}
+  <div className="flex flex-col md:flex-row items-center gap-10">
+    <img
+      src={img4}
+      alt="Cricket Booking"
+      className="w-full md:w-1/2 rounded-xl shadow-md"
+    />
+    <div className="md:w-1/2 text-justify leading-relaxed text-[#0f172a] text-[15px] font-medium">
+      <h3 className="font-bold text-xl mb-2 text-[#07332f]">Cricket Grounds & Turf Bookings</h3>
+      Book your favourite cricket ground near with just a few clicks. From box cricket turf and turf
+      cricket ground to professional venues like mrr cricket ground, cnr cricket ground 2, vdr cricket
+      ground, and vscg cricket ground, ZadSports makes cricket ground booking simple and reliable.
+      Whether you need indoor cricket nets, cricket net practice, or a full cricket ground for rent, our
+      platform covers it all.
+    </div>
+  </div>
+
+  {/* 2 — Badminton */}
+  <div className="flex flex-col md:flex-row-reverse items-center gap-10">
+    <img
+      src={img1}
+      alt="Indoor & Outdoor Sports"
+      className="w-full md:w-1/2 rounded-xl shadow-md"
+    />
+    <div className="md:w-1/2 text-justify leading-relaxed text-[#0f172a] text-[15px] font-medium">
+      <h3 className="font-bold text-xl mb-2 text-[#07332f]">Badminton, Basketball & Indoor Sports</h3>
+      Looking for badminton court booking or joining a badminton tournament near me? ZadSports
+      connects you to premium venues including Flying Feathers Badminton Academy and spacious
+      badminton halls. For multi-sport lovers, we also offer basketball courts, basketball ground, pool
+      table, table tennis club, and indoor cricket at trusted locations like Striker Sports Indoor Academy.
+    </div>
+  </div>
+
+  {/* 3 — Football & More */}
+  <div className="flex flex-col md:flex-row items-center gap-10">
+    <img
+      src={img2}
+      alt="Football Ground Booking"
+      className="w-full md:w-1/2 rounded-xl shadow-md"
+    />
+    <div className="md:w-1/2 text-justify leading-relaxed text-[#0f172a] text-[15px] font-medium">
+      <h3 className="font-bold text-xl mb-2 text-[#07332f]">Football, Tennis & More</h3>
+      From football turf to full-size football ground in India, ZadSports helps you find and book the best
+      venues. Play at synthetic turf football grounds, join matches at your local football ground, or try
+      something new with tennis courts near me and pickleball court bookings. Whether it’s casual play
+      or tournaments, ZadSports ensures smooth scheduling and ground booking.
+    </div>
+  </div>
+
+  {/* 4 — Resorts */}
+  <div className="flex flex-col md:flex-row-reverse items-center gap-10">
+    <img
+      src={img3}
+      alt="Sports Resort & Community Venues"
+      className="w-full md:w-1/2 rounded-xl shadow-md"
+    />
+    <div className="md:w-1/2 text-justify leading-relaxed text-[#0f172a] text-[15px] font-medium">
+      <h3 className="font-bold text-xl mb-2 text-[#07332f]">Sports Resorts & Community Venues</h3>
+      Enjoy play with leisure at a resort with cricket ground – ideal for family outings, corporate events,
+      and weekend tournaments. Popular destinations include scf cricket ground Salem, Salem cricket
+      ground, snr college cricket ground Coimbatore, and new Madies cricket ground. With easy
+      access to synthetic ground, turf near me and community cricket ground booking in Hyderabad,
+      ZadSports brings people together to play, relax, and celebrate sports.
+    </div>
+  </div>
+
+</div>
+
+
+  </div>
+</section>
+{/* ---------------------------------------------------------------------------------------------------------------------------------------- */}
+          <section
+            id="pages"
+            className="bg-[#F0F8FF] py-12 px-4 sm:px-6 md:px-10 mt-3"
+          >
+            <div className="max-w-6xl mx-auto">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#0478df] uppercase tracking-widest text-center sm:text-left">
+                BLOGS
+              </h3>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl mt-3 font-medium text-[#0F172A] text-center sm:text-left">
+                Sports Insights and Booking Tips
+              </h2>
+              <p className="text-[#334155] mt-4 sm:mt-6 max-w-3xl text-center sm:text-left mx-auto sm:mx-0 text-sm sm:text-base">
+                Latest News & Articles.
+              </p>
+
+              {/* <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
       {blogArticles.map((article, index) => (
         <motion.div
           key={index}
@@ -752,65 +836,65 @@ const Home: React.FC = () => {
 </button>
 
     </div> */}
-            <Blogs />
-          </div>
-
-          {/* Modal */}
-          {showModal && (
-            <div className="fixed inset-0 bg-[#] bg-opacity-100 z-50 flex items-center justify-center px-4 py-6 sm:px-6">
-              <div className="bg-white rounded-xl w-full max-w-sm sm:max-w-md md:max-w-lg p-4 sm:p-6 relative shadow-2xl overflow-y-auto max-h-[90vh]">
-                <button
-                  onClick={() => setShowModal(false)}
-                  className="absolute top-3 right-3 text-2xl font-bold text-gray-800 border border-gray-300 rounded-full w-8 h-8 flex items-center justify-center bg-white hover:text-red-500 shadow-sm"
-                >
-                  &times;
-                </button>
-
-                <img
-                  src={bat}
-                  alt="Blog Modal"
-                  className="w-full h-40 sm:h-48 object-cover rounded mb-4"
-                />
-                <h3 className="text-lg sm:text-xl font-bold text-[#07332f] mb-2">
-                  Why Verified Grounds Make All the Difference
-                </h3>
-                <p className="text-sm text-gray-700 mb-4">
-                  This is static modal content regardless of which blog card you
-                  click. It can display hardcoded data or be customized later.
-                </p>
-                <p className="text-xs text-gray-500 flex items-center gap-1">
-                  <CalendarDays className="w-4 h-4" /> June 10, 2025
-                </p>
-              </div>
+              <Blogs />
             </div>
-          )}
-        </section>
-      </div>
-      {/* ----------------------------------------------------------------------------------------------------- */}
-      <section id="achievements" className="bg-[#F0F8FF] py-16 px-6 sm:px-10">
-        <div className="max-w-6xl mx-auto">
-          {/* Heading */}
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className=" mt-10 mb-10 lg:mb-20"
-          >
-            <h3 className="text-xl md:text-2xl font-bold text-[#0478df] uppercase tracking-widest">
-              Achievements
-            </h3>
-            <h2 className="text-3xl md:text-4xl mt-5 font-medium text-[#0F172A]">
-              Our Growth and Impact
-            </h2>
-            {/* <p className="text-[#334155] mt-6 max-w-3xl mx-auto text-base md:text-lg">
+
+            {/* Modal */}
+            {showModal && (
+              <div className="fixed inset-0 bg-[#] bg-opacity-100 z-50 flex items-center justify-center px-4 py-6 sm:px-6">
+                <div className="bg-white rounded-xl w-full max-w-sm sm:max-w-md md:max-w-lg p-4 sm:p-6 relative shadow-2xl overflow-y-auto max-h-[90vh]">
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-3 right-3 text-2xl font-bold text-gray-800 border border-gray-300 rounded-full w-8 h-8 flex items-center justify-center bg-white hover:text-red-500 shadow-sm"
+                  >
+                    &times;
+                  </button>
+
+                  <img
+                    src={bat}
+                    alt="Blog Modal"
+                    className="w-full h-40 sm:h-48 object-cover rounded mb-4"
+                  />
+                  <h3 className="text-lg sm:text-xl font-bold text-[#07332f] mb-2">
+                    Why Verified Grounds Make All the Difference
+                  </h3>
+                  <p className="text-sm text-gray-700 mb-4">
+                    This is static modal content regardless of which blog card you
+                    click. It can display hardcoded data or be customized later.
+                  </p>
+                  <p className="text-xs text-gray-500 flex items-center gap-1">
+                    <CalendarDays className="w-4 h-4" /> June 10, 2025
+                  </p>
+                </div>
+              </div>
+            )}
+          </section>
+        </div>
+        {/* ----------------------------------------------------------------------------------------------------- */}
+        <section id="achievements" className="bg-[#F0F8FF] py-16 px-6 sm:px-10">
+          <div className="max-w-6xl mx-auto">
+            {/* Heading */}
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className=" mt-10 mb-10 lg:mb-20"
+            >
+              <h3 className="text-xl md:text-2xl font-bold text-[#0478df] uppercase tracking-widest">
+                Achievements
+              </h3>
+              <h2 className="text-3xl md:text-4xl mt-5 font-medium text-[#0F172A]">
+                Our Growth and Impact
+              </h2>
+              {/* <p className="text-[#334155] mt-6 max-w-3xl mx-auto text-base md:text-lg">
               We are proud to serve sports players and venue owners through a
               platform that prioritizes quality, trust, and ease of use.
             </p> */}
-          </motion.div>
+            </motion.div>
 
-          {/* Cards */}
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {/* Cards */}
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 title: "500+ Grounds Onboarded",
@@ -864,26 +948,26 @@ const Home: React.FC = () => {
             ))}
           </div> */}
 
-          <div>
-            <Achievements />
+            <div>
+              <Achievements />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* --------------------------------------------------------------------------------------------- */}
-      <section className="bg-[#daedff] py-16 px-4 sm:px-6 mb-3">
-        <div className="max-w-6xl mx-auto">
-          {/* Heading */}
-          <div className=" mb-2">
-            <h3 className="text-xl md:text-2xl font-bold text-[#0478df] uppercase tracking-widest">
-              User Reviews
-            </h3>
-            <h2 className="text-3xl md:text-4xl mt-5 font-medium text-[#0F172A]">
-              What User Says
-            </h2>
-          </div>
+        {/* --------------------------------------------------------------------------------------------- */}
+        <section className="bg-[#daedff] py-16 px-4 sm:px-6 mb-3">
+          <div className="max-w-6xl mx-auto">
+            {/* Heading */}
+            <div className=" mb-2">
+              <h3 className="text-xl md:text-2xl font-bold text-[#0478df] uppercase tracking-widest">
+                User Reviews
+              </h3>
+              <h2 className="text-3xl md:text-4xl mt-5 font-medium text-[#0F172A]">
+                What User Says
+              </h2>
+            </div>
 
-          {/* <div className="flex items-center overflow-hidden gap-1">
+            {/* <div className="flex items-center overflow-hidden gap-1">
             <div className="min-w-[90px]">
               <button
                 onClick={() => setSelectedVersion(releaseData[0])}
@@ -921,8 +1005,8 @@ const Home: React.FC = () => {
             </div>
           </div> */}
 
-          {/* Version Details */}
-          {/* <div className="bg-white mt-8 p-6 rounded-xl shadow-md space-y-6 max-w-3xl mx-auto">
+            {/* Version Details */}
+            {/* <div className="bg-white mt-8 p-6 rounded-xl shadow-md space-y-6 max-w-3xl mx-auto">
             {selectedVersion.points.map((point, index) => (
               <div key={index}>
                 <h4 className="text-lg font-bold text-[#0478df]">
@@ -935,208 +1019,205 @@ const Home: React.FC = () => {
             ))}
           </div> */}
 
-          <ListUserReview />
-        </div>
-      </section>
-      {/* ------------------------------------------------------------------------------ */}
-      <section id="contact" className="relative py-16 px-6 overflow-hidden">
-        {/* Fixed Blurred Background */}
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center filter blur-md scale-110"
-          style={{
-            // backgroundImage: `url(${showFeedbackForm ? ball : ManPlay})`,
-            backgroundImage: `url(${Cricket})`,
-            backgroundAttachment: "fixed",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
+            <ListUserReview />
+          </div>
+        </section>
+        {/* ------------------------------------------------------------------------------ */}
+        <section id="contact" className="relative py-16 px-6 overflow-hidden">
+          {/* Fixed Blurred Background */}
+          <div
+            className="absolute inset-0 z-0 bg-cover bg-center filter blur-md scale-110"
+            style={{
+              // backgroundImage: `url(${showFeedbackForm ? ball : ManPlay})`,
+              backgroundImage: `url(${Cricket})`,
+              backgroundAttachment: "fixed",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
 
-        {/* Content Layer */}
-        <div className="relative z-10">
-          <h2 className="text-xl md:text-2xl font-bold text-[#0478df] text-center mb-6">
-            {showFeedbackForm ? "Feedback Form" : "Contact Form"}
-          </h2>
+          {/* Content Layer */}
+          <div className="relative z-10">
+            <h2 className="text-xl md:text-2xl font-bold text-[#0478df] text-center mb-6">
+              {showFeedbackForm ? "Feedback Form" : "Contact Form"}
+            </h2>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={slideInFromLeft1}
-            className={`max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 bg-white/10 backdrop-blur-lg border border-white/30 rounded-2xl shadow-2xl overflow-hidden transition-all duration-700 ${
-              showFeedbackForm ? "md:grid-flow-dense" : ""
-            }`}
-          >
-            {/* Left/Right Panel - Info Section */}
             <motion.div
-              key={showFeedbackForm ? "feedback-info" : "contact-info"}
               initial="hidden"
-              animate="visible"
-              variants={showFeedbackForm ? slideInFromRight : slideInFromLeft1}
-              className={`flex flex-col justify-center items-center p-6 bg-white/10 backdrop-blur-lg text-white border-white/20 rounded-lg shadow-lg ${
-                showFeedbackForm ? "md:order-2" : "md:order-1"
-              }`}
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={slideInFromLeft1}
+              className={`max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 bg-white/10 backdrop-blur-lg border border-white/30 rounded-2xl shadow-2xl overflow-hidden transition-all duration-700 ${showFeedbackForm ? "md:grid-flow-dense" : ""
+                }`}
             >
-              <motion.img
-                key={showFeedbackForm ? "ball-img" : "manplay-img"}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                src={showFeedbackForm ? ball : ManPlay}
-                alt="Visual"
-                className="rounded-xl w-48 h-48 object-cover mb-4 shadow-lg border border-white/30"
-              />
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-2xl font-semibold"
+              {/* Left/Right Panel - Info Section */}
+              <motion.div
+                key={showFeedbackForm ? "feedback-info" : "contact-info"}
+                initial="hidden"
+                animate="visible"
+                variants={showFeedbackForm ? slideInFromRight : slideInFromLeft1}
+                className={`flex flex-col justify-center items-center p-6 bg-white/10 backdrop-blur-lg text-white border-white/20 rounded-lg shadow-lg ${showFeedbackForm ? "md:order-2" : "md:order-1"
+                  }`}
               >
-                {showFeedbackForm ? "We'd Love Your Feedback!" : "Get in Touch"}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="text-md mt-2 text-center"
-              >
-                {showFeedbackForm
-                  ? "Share your experience with ZadSports."
-                  : "Have questions? We're here to help!"}
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-                className="text-md font-medium mt-2 text-center px-4"
-              >
-                {showFeedbackForm
-                  ? "Your input helps us improve and serve you better."
-                  : "We're here to assist with bookings, partnerships, and all your questions."}
-                <span className="font-bold"> ZadSports!</span>
-              </motion.p>
-              <motion.button
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="mt-4 px-4 py-2 bg-white text-[#0478df] font-bold rounded-full shadow hover:bg-blue-100 transition-all duration-300"
-                onClick={() => setShowFeedbackForm(!showFeedbackForm)}
-              >
-                {showFeedbackForm ? "Contact Us" : "Give Feedback"}
-              </motion.button>
-            </motion.div>
+                <motion.img
+                  key={showFeedbackForm ? "ball-img" : "manplay-img"}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  src={showFeedbackForm ? ball : ManPlay}
+                  alt="Visual"
+                  className="rounded-xl w-48 h-48 object-cover mb-4 shadow-lg border border-white/30"
+                />
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                  className="text-2xl font-semibold"
+                >
+                  {showFeedbackForm ? "We'd Love Your Feedback!" : "Get in Touch"}
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="text-md mt-2 text-center"
+                >
+                  {showFeedbackForm
+                    ? "Share your experience with ZadSports."
+                    : "Have questions? We're here to help!"}
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="text-md font-medium mt-2 text-center px-4"
+                >
+                  {showFeedbackForm
+                    ? "Your input helps us improve and serve you better."
+                    : "We're here to assist with bookings, partnerships, and all your questions."}
+                  <span className="font-bold"> ZadSports!</span>
+                </motion.p>
+                <motion.button
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.5 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="mt-4 px-4 py-2 bg-white text-[#0478df] font-bold rounded-full shadow hover:bg-blue-100 transition-all duration-300"
+                  onClick={() => setShowFeedbackForm(!showFeedbackForm)}
+                >
+                  {showFeedbackForm ? "Contact Us" : "Give Feedback"}
+                </motion.button>
+              </motion.div>
 
-            {/* Right/Left Panel - Form Section */}
-            <motion.div
-              key={showFeedbackForm ? "feedback-form" : "contact-form"}
-              initial="hidden"
-              animate="visible"
-              variants={showFeedbackForm ? slideInFromLeft1 : slideInFromRight}
-              className={`p-8 text-white w-full ${
-                showFeedbackForm ? "md:order-1" : "md:order-2"
-              }`}
-            >
-              {showFeedbackForm ? (
-                <>
-                  <FeedBackForm />
-                </>
-              ) : (
-                <>
-                  <motion.h2
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="text-2xl font-bold mb-6 text-white"
-                  >
-                    Contact Us
-                  </motion.h2>
-                  <motion.div
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.1 }}
-                    className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                  >
-                    <div className="flex flex-col">
+              {/* Right/Left Panel - Form Section */}
+              <motion.div
+                key={showFeedbackForm ? "feedback-form" : "contact-form"}
+                initial="hidden"
+                animate="visible"
+                variants={showFeedbackForm ? slideInFromLeft1 : slideInFromRight}
+                className={`p-8 text-white w-full ${showFeedbackForm ? "md:order-1" : "md:order-2"
+                  }`}
+              >
+                {showFeedbackForm ? (
+                  <>
+                    <FeedBackForm />
+                  </>
+                ) : (
+                  <>
+                    <motion.h2
+                      initial={{ opacity: 0, y: -20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="text-2xl font-bold mb-6 text-white"
+                    >
+                      Contact Us
+                    </motion.h2>
+                    <motion.div
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.1 }}
+                      className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                    >
+                      <div className="flex flex-col">
+                        <label className="mb-1 font-semibold text-white">
+                          Full Name <span className="text-red-400">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="Enter your Full Name"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                          required
+                          className="bg-white/10 placeholder-white text-white p-3 rounded-md border border-white/30 focus:border-white/50 focus:outline-none transition-all duration-300"
+                        />
+                      </div>
+                      <div className="flex flex-col">
+                        <label className="mb-1 font-semibold text-white">
+                          Phone Number
+                        </label>
+                        <input
+                          type="tel"
+                          placeholder="Enter your phone number"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
+                          className="bg-white/10 placeholder-white text-white p-3 rounded-md border border-white/30 focus:border-white/50 focus:outline-none transition-all duration-300"
+                        />
+                      </div>
+                    </motion.div>
+                    <motion.div
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.2 }}
+                      className="flex flex-col mt-4"
+                    >
                       <label className="mb-1 font-semibold text-white">
-                        Full Name <span className="text-red-400">*</span>
+                        Email Address <span className="text-red-400">*</span>
                       </label>
                       <input
-                        type="text"
-                        placeholder="Enter your Full Name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        type="email"
+                        placeholder="Enter your Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         required
                         className="bg-white/10 placeholder-white text-white p-3 rounded-md border border-white/30 focus:border-white/50 focus:outline-none transition-all duration-300"
                       />
-                    </div>
-                    <div className="flex flex-col">
+                    </motion.div>
+                    <motion.div
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.3 }}
+                      className="flex flex-col mt-4"
+                    >
                       <label className="mb-1 font-semibold text-white">
-                        Phone Number
+                        Message
                       </label>
-                      <input
-                        type="tel"
-                        placeholder="Enter your phone number"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        className="bg-white/10 placeholder-white text-white p-3 rounded-md border border-white/30 focus:border-white/50 focus:outline-none transition-all duration-300"
-                      />
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.2 }}
-                    className="flex flex-col mt-4"
-                  >
-                    <label className="mb-1 font-semibold text-white">
-                      Email Address <span className="text-red-400">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      placeholder="Enter your Email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                      className="bg-white/10 placeholder-white text-white p-3 rounded-md border border-white/30 focus:border-white/50 focus:outline-none transition-all duration-300"
-                    />
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.3 }}
-                    className="flex flex-col mt-4"
-                  >
-                    <label className="mb-1 font-semibold text-white">
-                      Message
-                    </label>
-                    <textarea
-                      placeholder="Tell us how we can help..."
-                      value={description}
-                      onChange={(e) => setDescription(e.target.value)}
-                      rows={4}
-                      className="bg-white/10 placeholder-white text-white p-3 rounded-md border border-white/30 focus:border-white/50 focus:outline-none transition-all duration-300 resize-none"
-                    ></textarea>
-                  </motion.div>
-                  <motion.button
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 }}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    type="submit"
-                    onClick={handleClick}
-                    className="mt-6 w-full py-3 bg-white text-[#2563eb] font-bold font-style-lato rounded-md hover:bg-blue-100 transition duration-300"
-                  >
-                    Submit
-                  </motion.button>
-                </>
-              )}
+                      <textarea
+                        placeholder="Tell us how we can help..."
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
+                        rows={4}
+                        className="bg-white/10 placeholder-white text-white p-3 rounded-md border border-white/30 focus:border-white/50 focus:outline-none transition-all duration-300 resize-none"
+                      ></textarea>
+                    </motion.div>
+                    <motion.button
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.4 }}
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      type="submit"
+                      onClick={handleClick}
+                      className="mt-6 w-full py-3 bg-white text-[#2563eb] font-bold font-style-lato rounded-md hover:bg-blue-100 transition duration-300"
+                    >
+                      Submit
+                    </motion.button>
+                  </>
+                )}
+              </motion.div>
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
-    </div>
+          </div>
+        </section>
+      </div>
     </>
   );
 };

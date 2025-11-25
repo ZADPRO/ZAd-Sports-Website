@@ -66,6 +66,7 @@ const menuItems = [
 
     return () => observer.disconnect();
   }, []);
+  
 
  const handleNavigation = (path: string) => {
   if (path === "/") {

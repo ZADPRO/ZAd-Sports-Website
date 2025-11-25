@@ -17,7 +17,7 @@ interface Product {
 }
 
 const Product: React.FC = () => {
-    
+
   const [products, setProducts] = useState<Product[]>([]);
   const [_hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const glideRef = useRef<Glide | null>(null);
@@ -107,70 +107,67 @@ const Product: React.FC = () => {
 
   return (
     <>
-           <Helmet>
-   <title>ZadSports – Book Grounds, Register & Play Matches Easily
-</title>
-      <meta name="description" content="Book sports grounds instantly, register teams, and play competitive matches with ZadSports. Simplified booking, seamless registration, and thrilling sports action - all in one place." />
-         <meta name="robots" content="index, follow" />
+      <Helmet>
+        <title>ZadSports – Book Grounds, Register & Play Matches Easily
+        </title>
+        <meta name="description" content="Book sports grounds instantly, register teams, and play competitive matches with ZadSports. Simplified booking, seamless registration, and thrilling sports action - all in one place." />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://zadsports.com" />
-      <meta
-  name="keywords"
-  content="box cricket ground size, resort with cricket ground, badminton tournament near me, cricket ground booking, cricket ground booking in hyderabad, cnr cricket ground 2, cricket ground for rent, turf cricket ground near me, box cricket turf, basketball ground near me, vdr cricket ground, turf cricket near me, turf box cricket, cricket net practice near me, mrr cricket ground, vscg cricket ground, basketball courts near me, striker sports indoor academy, indoor cricket nets near me, badminton hall, cricket bowling machine near me, book cricket ground near me, hsr layout cricket ground, snr college cricket ground coimbatore, new madies cricket ground, cooperage ground, cricket nets near me, table tennis club near me, cricket ground booking near me, box cricket, cricket turf near me, badminton court booking, indoor cricket near me, box cricket near me, ground booking app, scf cricket ground salem, turf near me for cricket, pool table near me, table tennis court near me, flying feathers badminton academy, cricket ground near me, synthetic ground near me, turf near me, cricket near me, badminton turf near me, salem cricket ground, ayr cricket ground, football turf near me, tennis courts near me, pickleball court, turf football ground near me, football ground in india, football ground near me, cricket tournament maker, cricket team names for local tournament"
-/>
+        <meta
+          name="keywords"
+          content="box cricket ground size, resort with cricket ground, badminton tournament near me, cricket ground booking, cricket ground booking in hyderabad, cnr cricket ground 2, cricket ground for rent, turf cricket ground near me, box cricket turf, basketball ground near me, vdr cricket ground, turf cricket near me, turf box cricket, cricket net practice near me, mrr cricket ground, vscg cricket ground, basketball courts near me, striker sports indoor academy, indoor cricket nets near me, badminton hall, cricket bowling machine near me, book cricket ground near me, hsr layout cricket ground, snr college cricket ground coimbatore, new madies cricket ground, cooperage ground, cricket nets near me, table tennis club near me, cricket ground booking near me, box cricket, cricket turf near me, badminton court booking, indoor cricket near me, box cricket near me, ground booking app, scf cricket ground salem, turf near me for cricket, pool table near me, table tennis court near me, flying feathers badminton academy, cricket ground near me, synthetic ground near me, turf near me, cricket near me, badminton turf near me, salem cricket ground, ayr cricket ground, football turf near me, tennis courts near me, pickleball court, turf football ground near me, football ground in india, football ground near me, cricket tournament maker, cricket team names for local tournament"
+        />
 
-    </Helmet>
-    <div>
-    <div className="w-full md:w-10/12 mx-auto py-10">
-  <p className="text-center text-[25px] uppercase font-bold text-[#0478df] mb-2">Our Products</p>
+      </Helmet>
+      <div>
+        <div className="w-full md:w-10/12 mx-auto py-10">
+          <p className="text-center text-[25px] uppercase font-bold text-[#0478df] mb-2">Our Products</p>
 
-  <div className="glide-09 relative w-full overflow-hidden py-6">
-    <div data-glide-el="track">
-      <ul className="flex relative w-full overflow-hidden p-0">
-        {products.map((product, index) => (
-          <li
-            key={index}
-            id={`product-tooltip-${index}`} // unique id for tooltip target
-            className="px-4 relative cursor-pointer"
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => window.open(product.refProductLink, "_blank")}
-          >
-            <img
-              src={product.signedImageUrl || sunset}
-              alt={product.refProductsName}
-              onError={(e) => {
-                e.currentTarget.onerror = null;
-                e.currentTarget.src = sunset;
-              }}
-  className="m-auto h-24 w-24 md:h-32 md:w-32 object-contain rounded-md"
-            />
-            <div className="text-center mt-2 font-semibold">{product.refProductsName}</div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
+          <div className="glide-09 relative w-full overflow-hidden py-6">
+            <div data-glide-el="track">
+              <ul className="flex relative w-full overflow-hidden p-0">
+                {products.map((product, index) => (
+                  <li
+                    key={index}
+                    id={`product-tooltip-${index}`} // unique id for tooltip target
+                    className="px-4 relative cursor-pointer"
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave}
+                    onClick={() => window.open(product.refProductLink, "_blank")}
+                  >
+                    <img
+                      src={product.signedImageUrl || sunset}
+                      alt={product.refProductsName}
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = sunset;
+                      }}
+                      className="m-auto h-24 w-24 md:h-32 md:w-32 object-contain rounded-md"
+                    />
+                    <div className="text-center mt-2 font-semibold">{product.refProductsName}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
 
-  {/* PrimeReact Tooltip bound to each product by id */}
-  {products.map((product, index) => (
-    <div className="w-[10%]">
-      <Tooltip
-      key={`tooltip-${index}`}
-      target={`#product-tooltip-${index}`}
-      content={product.refProductDescription}
-      mouseTrack
-      mouseTrackLeft={10}
-      showDelay={100}
-      hideDelay={100}
-      position="bottom"
-    />
-    </div>
-    
-  ))}
-
-</div>
-
-    </div></>
+          {/* PrimeReact Tooltip bound to each product by id */}
+          {products.map((product, index) => (
+            <div className="w-[10%]">
+              <Tooltip
+                key={`tooltip-${index}`}
+                target={`#product-tooltip-${index}`}
+                content={product.refProductDescription}
+                mouseTrack
+                mouseTrackLeft={10}
+                showDelay={100}
+                hideDelay={100}
+                position="bottom"
+              />
+            </div>
+          ))}
+        </div>
+      </div></>
   );
 };
 
